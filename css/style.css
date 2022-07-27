@@ -8,7 +8,8 @@
     --color-nav: #212121;
     --color-button:#188CE8;
     --color-footer: #2F303A;
-    --color-heder-border:#ECECEC
+    --color-heder-border:#ECECEC;
+    --color-portfolio-list:#EEEEEE;
 
 }
 
@@ -18,7 +19,11 @@ body {
     background-color: var(--color-text);
 
 }
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .logo-left {
     color: var(--color-one);
     font-family: 'Raleway';
@@ -37,6 +42,8 @@ body {
     line-height: 31px;
     letter-spacing: 0.03em;
     margin-right: 90px;
+    padding: 24px 0;
+
 
 } 
 
@@ -60,13 +67,12 @@ a {
     border-color: #757575;
     /* border-style: double; */
      padding-left: 15px;
- /* padding-right: 15px;  */
+ padding-right: 15px; 
 }
 .button-cont {
     display: block;
 }
 .section {
-        max-width: 1200px;
         margin: 0 auto;
         padding-top: 94px;
         padding-bottom: 94px;
@@ -77,23 +83,23 @@ a {
     align-items: baseline;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 0;
     
 }
 
 .nav-item {
-    margin-right: 50px;
+    /* margin-right: 50px; */
     /* margin-left: 0px; */
-    padding: 32px 0;
+    
 }
 .list-comun {
     display: flex;
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 32px 0;
+    
     gap: 30px;
-   
-     
+  
 
 }
 .list-comun-item {
@@ -113,40 +119,43 @@ a {
 .business-title {
     color: var(--color-text);
     width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-bottom: 30px;
-    margin: 0 auto
+    /* padding-bottom: 30px; */
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .hiden-title {
     display: none;
 }
 
-.heder-nav:hover,
-.heder-nav:focus,
+.heder-nav-link:hover,
+.heder-nav-link:focus,
 .heder-tel:focus,
 .heder-tel:hover {
     color: var(--color-one);
 
 }
-.heder-nav.current {
+.heder-nav-link.current {
     color: var(--color-one);
 }
 
-.heder-nav {
+.heder-nav-link {
     color: var(--color-nav);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
+    padding: 32px 0;
+    margin-right: 50px;
+}
+.link-nomargin {
+    margin-right: 0px;
 }
 
 .heder-tel {
@@ -155,13 +164,14 @@ a {
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--color-heder-tel);
+    padding: 32px 0;
 
 }
 .button-list {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 50px;
+    margin: 0 auto
 }
 .button-portfolio.current {
     background-color: var(--color-one);
@@ -183,7 +193,10 @@ a {
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
+    border: 0px;
     border-radius: 4px;
+    padding: 6px 22px;
+    margin-bottom: 50px;
     
 
 }
@@ -207,11 +220,10 @@ a {
     padding: 10px 32px;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
     border-radius: 4px;
     margin: 0 auto;
 }
-
-
 
 .advant-list .advant-list-title {
     font-weight: 700;
@@ -220,20 +232,26 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-nav);
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .advant-list {
     display: flex;
+    margin: 0 auto;
+    padding: 0;
+    margin: -15px;
     
 }
 .advant-list-item {
     margin: 15px;
-/* flex-basis: calc(100% / 4 - 30px); */
+    flex-basis: calc(100% / 4 - 30px);
 }
 .advant-list .advant-list-description {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--color-heder-tel);
+    margin: 0 auto;
 }
 
 .team-web {
@@ -253,13 +271,19 @@ a {
     letter-spacing: 0.03em;
     color: var(--color-mav);
 }
+.our-work {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 .our-work-list {
     display: flex;
     padding-left: 0px;
+    margin: 0 auto;
+    margin: -15px;
 }
 .owl-item {
     margin: 15px;
-/* flex-basis: calc(100% / 3 - 30px); */
+flex-basis: calc(100% / 3 - 30px);
 }
 .our-team-list {
     display: flex;
@@ -272,7 +296,11 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.our-team-list h3 {
+.team-name {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.name-employee {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -280,35 +308,36 @@ a {
     letter-spacing: 0.03em;
     color: var(--color-mav);
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
-.our-team-list p {
+.employee-job {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-heder-tel);
+    margin: 0 auto;
     
 }
 .our-portfolio {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    gap: 30px;
+    /* gap: 30px; */
+    margin: 0 auto;
+    margin: -15px;
 
 }
 
 .our-portlist {
-    border: 1px solid var(--color-heder-border);
-    padding-bottom: 20px;
-    /* margin: 15px; */
-    /* flex-basis: calc ((100% - 60px) / 3); */
-
-
+    margin: 15px;
+    flex-basis: calc ((100% - 60px) / 3);
     /* padding-right: 15px; */
     /* gap: 20px; */
 }
-.our-portfolio h2 {
+.portfolio-sub-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -322,7 +351,7 @@ a {
 .portfolio-discription {
     margin: 0 auto;
 }
-.our-portfolio p {
+.portfolio-discription {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -330,13 +359,14 @@ a {
 }
 .sub-title {
     text-align: left;
-    margin-top: 20px;
-    margin-left: 25px;
+    padding: 20px 22px;
+    border-left: 1px solid var(--color-portfolio-list);
+    border-bottom: 1px solid var(--color-portfolio-list);
+    border-right: 1px solid var(--color-portfolio-list);
 }
 .footerbox {
     display: block;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 .footer-contact,
 .footer-adress,
@@ -345,9 +375,18 @@ a {
     padding-left: 0px;
     
 }
+.address-footer {
+margin-top: 20px;
+font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+}
 .footer-adress {
-    margin-top: 20px;
-    margin-bottom: 0px;
+    
+    margin: 0 auto;
 }
 .footer-contact {
     margin-top: 0px;
@@ -357,6 +396,8 @@ a {
 
 .footer-web {
     background: var(--color-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     font-family: 'Raleway';
@@ -368,13 +409,6 @@ a {
 
 }
 .footer-adress {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--color-text);
     
 }
 .footer-link {

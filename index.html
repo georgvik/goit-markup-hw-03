@@ -19,13 +19,13 @@
         <nav class="heder-nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="heder-nav current">Студия</a>
+              <a href="./index.html" class="heder-nav-link current">Студия</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="heder-nav">Портфолио</a>
+              <a href="./portfolio.html" class="heder-nav-link">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a href="" class="heder-nav">Контакты</a>
+              <a href="" class="heder-nav-link link-nomargin">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -79,8 +79,9 @@
         </div>
       </section>
       <section class="section work-section">
-        <h2 class="our-work">Чем мы занимаемся</h2>
-        <div class="container">
+        <div class="container button-cont">
+          <h2 class="our-work">Чем мы занимаемся</h2>
+
           <ul class="our-work-list">
             <li class="owl-item">
               <img
@@ -103,24 +104,32 @@
         <div class="container">
           <ul class="our-team-list">
             <li class="team-img">
-              <img src="./images/photo-igor.jpg" alt="product designer" width="270" "/>
-              <h3>Игорь Демьяненко</h3>
-              <p lang="en">Product Designer</p>
+              <img src="./images/photo-igor.jpg" alt="product designer" width="270" />
+              <div class="team-name">
+                <h3 class="name-employee">Игорь Демьяненко</h3>
+                <p class="employee-job" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-img">
               <img src="./images/photo-olga.jpg" alt="frontend developer" width="270" />
-              <h3>Ольга Репина</h3>
-              <p lang="en">Frontend Developer</p>
+              <div class="team-name">
+                <h3 class="name-employee">Ольга Репина</h3>
+                <p class="employee-job" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-img">
               <img src="./images/photo-nik.jpg" alt="marketing" width="270" />
-              <h3>Николай Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <div class="team-name">
+                <h3 class="name-employee">Николай Тарасов</h3>
+                <p class="employee-job" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-img">
               <img src="./images/photo-mike.jpg" alt="ui design" width="270" />
-              <h3>Михаил Ермаков</h3>
-              <p lang="en">UI Designer</p>
+              <div class="team-name">
+                <h3 class="name-employee">Михаил Ермаков</h3>
+                <p class="employee-job" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -130,7 +139,7 @@
       <div class="container footerbox">
         <a href="./index.html" class="logo-footer"> <span class="logo-left">Web</span>Studio </a>
 
-        <address>
+        <address class="address-footer">
           <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
           <ul class="footer-contact">
             <li class="footer-link">
