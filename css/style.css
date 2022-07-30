@@ -67,7 +67,7 @@ a {
     border-color: #757575;
     /* border-style: double; */
      padding-left: 15px;
- padding-right: 15px; 
+    padding-right: 15px; 
 }
 .button-cont {
     display: block;
@@ -88,7 +88,7 @@ a {
 }
 
 .nav-item {
-    /* margin-right: 50px; */
+    margin-right: 50px;
     /* margin-left: 0px; */
     
 }
@@ -97,7 +97,7 @@ a {
     margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    
+    padding-left: 0px;
     gap: 30px;
   
 
@@ -146,19 +146,21 @@ a {
 }
 
 .heder-nav-link {
+    display: block;
     color: var(--color-nav);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
     padding: 32px 0;
-    margin-right: 50px;
+    
 }
 .link-nomargin {
     margin-right: 0px;
 }
 
 .heder-tel {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -171,7 +173,10 @@ a {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0px;
+
 }
 .button-portfolio.current {
     background-color: var(--color-one);
@@ -196,7 +201,7 @@ a {
     border: 0px;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 50px;
+   
     
 
 }
@@ -261,7 +266,6 @@ a {
     padding-top: 0px;
 }
     
-
 .our-work,
 .our-team {
     font-weight: 700;
@@ -285,9 +289,15 @@ a {
     margin: 15px;
 flex-basis: calc(100% / 3 - 30px);
 }
+.our-team {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 .our-team-list {
     display: flex;
     padding-left: 0px;
+    margin: 0 auto;
+    margin: -15px;
 }
 .team-img {
     margin: 15px;
@@ -389,7 +399,7 @@ font-family: 'Roboto';
     margin: 0 auto;
 }
 .footer-contact {
-    margin-top: 0px;
+    margin-top: 9px;
     margin-bottom: 0px;
     padding: 0;
 }
@@ -412,7 +422,7 @@ font-family: 'Roboto';
     
 }
 .footer-link {
-    margin-top: 9px;
+    margin-bottom: 9px;
 }
 .footer-tel {
     font-family: 'Roboto';

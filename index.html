@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize.git" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -24,8 +24,8 @@
             <li class="nav-item">
               <a href="./portfolio.html" class="heder-nav-link">Портфолио</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="heder-nav-link link-nomargin">Контакты</a>
+            <li class="nav-item link-nomargin">
+              <a href="" class="heder-nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -100,8 +100,8 @@
         </div>
       </section>
       <section class="team-web section">
-        <h2 class="our-team">Наша команда</h2>
-        <div class="container">
+        <div class="container button-cont">
+          <h2 class="our-team">Наша команда</h2>
           <ul class="our-team-list">
             <li class="team-img">
               <img src="./images/photo-igor.jpg" alt="product designer" width="270" />
@@ -145,7 +145,7 @@
             <li class="footer-link">
               <a href="mailto:info@devstudio.com" class="footer-tel">info@devstudio.com</a>
             </li>
-            <li class="footer-link">
+            <li>
               <a href="tel:+38096111111" class="footer-tel">+38 096 111 11 11</a>
             </li>
           </ul>
